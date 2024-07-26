@@ -1,23 +1,15 @@
 .TodoItem {
-  padding: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 8px;
   border-bottom: 1px solid #ccc;
 }
 
-.TodoItem:hover {
-  background-color: #f0f0f0;
+.TodoItem span {
+  flex-grow: 1;
 }
 
-.delete-button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.delete-button:hover {
-  background-color: darkred;
+.TodoItem button {
+  margin-left: 8px;
 }

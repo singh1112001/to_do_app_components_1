@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './TodoInput.css';
 
 function TodoInput({ addTodo }) {
+  
   const [inputValue, setInputValue] = useState('');
 
   const handleSubmit = (e) => {

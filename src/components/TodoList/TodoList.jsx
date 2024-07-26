@@ -2,7 +2,7 @@ import React from 'react';
 import TodoItem from '../TodoItem/TodoItem';
 import './TodoList.css';
 
-function TodoList({ todos, toggleTodo, deleteTodo }) {
+function TodoList({ todos, toggleTodo, deleteTodo, editTodo }) {
   return (
     <ul className="TodoList">
       {todos.map((todo, index) => (
@@ -11,6 +11,7 @@ function TodoList({ todos, toggleTodo, deleteTodo }) {
           todo={todo}
           toggleTodo={() => toggleTodo(index)}
           deleteTodo={() => deleteTodo(index)}
+          editTodo={(newText) => editTodo(index, newText)}
         />
       ))}
     </ul>
@@ -18,3 +19,4 @@ function TodoList({ todos, toggleTodo, deleteTodo }) {
 }
 
 export default TodoList;
+
