@@ -1,0 +1,16 @@
+.TodoInput {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .TodoInput input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .TodoInput button {
+    padding: 10px;
+  }
+  
